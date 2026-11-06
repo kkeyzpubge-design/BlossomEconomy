@@ -1,0 +1,39 @@
+name: BlossomEconomy
+version: 1.0.0
+main: xyz.blossom.economy.BlossomEconomy
+api-version: '1.21'
+author: Blossom
+description: All-in-one economy, shop, sell GUI and buy-now auction house.
+softdepend: [Vault]
+commands:
+  balance:
+    aliases: [bal, money]
+    description: View your balance.
+  pay:
+    description: Send money to another player.
+    usage: /pay <player> <amount>
+  baltop:
+    description: View the richest players.
+  shop:
+    description: Open the server shop.
+  sellgui:
+    description: Sell items through a GUI.
+  ah:
+    aliases: [auction, auctionhouse]
+    description: Open the auction house.
+  be:
+    description: BlossomEconomy administration.
+    usage: /be reload
+permissions:
+  blossomeconomy.admin:
+    default: op
+  blossomeconomy.balance:
+    default: true
+  blossomeconomy.pay:
+    default: true
+  blossomeconomy.shop:
+    default: true
+  blossomeconomy.sell:
+    default: true
+  blossomeconomy.ah:
+    default: true
